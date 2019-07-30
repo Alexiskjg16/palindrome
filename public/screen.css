@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  margin: 0;
+  text-align: center;
+  margin: 4em;
   min-height: 100%;
-  font: 16px / 1 sans-serif;
+  font: 20px / 1 times;
 }
