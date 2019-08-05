@@ -1,7 +1,18 @@
 <body>
     <h1>Is your word a palindrome?</h1>
-    <input [id]='inputField'/>
-    <button (click)="updateWordEvent()">Click to See</button>
-    <label [for]='yesOrNo' innerHTML='yesOrNo'>Yes or No</label>
-   
-  </body>
+   <input type="text" placeholder="i.e. racecar" #inputName/>
+    <button (click)="isPalindrome()">Click to See</button>
+    <div *ngIf="showYes"> Yes it is! </div>
+    <div *ngIf="showNo"> Nope it's not! </div>
+</body>
+<!-- 
+<div>
+<form (submit)="inputName.value">
+    <h2>Is your value a palindrome?</h2>
+    <div class="form-group">
+        <input type="text" placeholder="i.e. racecar" #inputName>
+    </div>
+    <button type="submit">Check</button>
+
+</form>
+</div> -->
